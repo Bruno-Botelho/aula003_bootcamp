@@ -19,6 +19,16 @@ for quantidade in quantidades:
 # Os dados incluem medições de temperatura. Você precisa classificar cada leitura 
 # como 'Baixa', 'Normal' ou 'Alta'. Considerando que:
 
+temp = [12,15,20,99,49,45]
+
+for temperatura in temp:
+    if temperatura <10:
+        print('Baixa')
+    elif temperatura <= 30:
+        print('Normal')
+    else:
+        print('ALTAAA')
+
 ### Exercício 3: Filtragem de Logs por Severidade
 # Você está analisando logs de uma aplicação e precisa filtrar mensagens 
 # com severidade 'ERROR'. Dado um registro de log em formato de dicionário 
