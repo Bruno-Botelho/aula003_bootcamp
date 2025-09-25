@@ -62,34 +62,46 @@
 # fornecido um email válido. Escreva um programa que valide essas condições 
 # e imprima "Dados de usuário válidos" ou o erro específico encontrado.
 
-import re
+# import re
 
-while True:
-    try:
-        idade = int(input('Digite sua idade: '))
-        break
-    except:
-        print('Digite um numero certo MMULA!!')
+# while True:
+#     try:
+#         idade = int(input('Digite sua idade: '))
+#         break
+#     except:
+#         print('Digite um numero certo MMULA!!')
 
-while True:
+# while True:
     
-    email = input('Digite seu email: ')
+#     email = input('Digite seu email: ')
 
-    if not re.match(r"[^@]+@[^@]+\.[^@]+", email):
-            print('Digite um email válido!')
-    else:
-        break
+#     if not re.match(r"[^@]+@[^@]+\.[^@]+", email):
+#             print('Digite um email válido!')
+#     else:
+#         break
     
-# Validação final
-if 18 <= idade <= 65:
-    print("Dados de usuário válidos")
-else:
-    print("Erro: idade fora do intervalo permitido (18 a 65 anos)")
+# # Validação final
+# if 18 <= idade <= 65:
+#     print("Dados de usuário válidos")
+# else:
+#     print("Erro: idade fora do intervalo permitido (18 a 65 anos)")
 ### Exercício 5: Detecção de Anomalias em Dados de Transações
 # Você está trabalhando em um sistema de detecção de fraude e precisa identificar 
 # transações suspeitas. Uma transação é considerada suspeita se o valor for superior 
 # a R$ 10.000 ou se ocorrer fora do horário comercial (antes das 9h ou depois das 18h). 
 # Dada uma transação como `transacao = {'valor': 12000, 'hora': 20}`, verifique se ela é suspeita.
+# from datetime import datetime
+
+# agora = datetime.now()
+# hr = agora.hour
+# vlr_tran = float(input('Valor da transação: '))
+
+# if vlr_tran > 10000 or (hr < 9 or hr > 18):
+#      print('ALERTA')
+# else:
+#      print('OK')
+
+
 
 ### Exercício 6. Contagem de Palavras em Textos
 # Objetivo:** Dado um texto, contar quantas vezes cada palavra única aparece nele.
